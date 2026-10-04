@@ -62,7 +62,7 @@ pipeline {
         stage('Build and Push Docker Image') {
 
             environment {
-                DOCKER_IMAGE = "Shrishaks/java-springboot-app:${BUILD_NUMBER}"
+                DOCKER_IMAGE = "shrishaks/java-springboot-app:${BUILD_NUMBER}"
             }
 
             steps {
