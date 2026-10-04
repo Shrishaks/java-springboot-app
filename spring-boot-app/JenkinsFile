@@ -122,7 +122,7 @@ pipeline {
                         -m "Update deployment image to version ${BUILD_NUMBER}" || true
 
                         git push \
-                        https://${GITHUB_TOKEN}@github.com/${GIT_USER_NAME}/${GIT_REPO_NAME}.git \
+                        https://${GITHUB_TOKEN}@github.com/Shrishaks/java-springboot-app.git \
                         HEAD:main
                     '''
                 }
