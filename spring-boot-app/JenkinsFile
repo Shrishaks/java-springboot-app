@@ -112,6 +112,8 @@ pipeline {
                     echo "Current directory:"
                     pwd
 
+                    git config --global --add safe.directory /var/lib/jenkins/workspace/java-app
+
                     echo "Git status:"
                     git status
                         git config user.email "shrishaks2001@gmail.com"
